@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>right</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/layoutRight.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/leaflet/leaflet.css"/>
+</head>
+<body>
+	<div class="container">
+		<div class="top">
+			<div class="monitor-box">
+				<div class="top-title">24h水位变化曲线</div>
+				<div class="tab-box">
+					<div class="tab-ul">
+						<ul class="col-4" id="flood_ul">
+							<li class="active">
+								<span>八一立交</span>
+							</li>
+							<li>
+								<span>环城东路/丰亭路口</span>
+							</li>
+							<li>
+								<span>洪源立交</span>
+							</li>
+						</ul>
+					</div>
+					<div id="flood_tab" class="tab-chart">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="update-time blue">数据更新至年月日</div>
+				</div>
+			</div>
+			<div class="monitor-box">
+				<div class="top-title">24h水质变化情况</div>
+				<div class="tab-box">
+					<div class="little-title">污水厂围墙外</div>
+					<div class="tab-ul">
+						<ul class="col-2" id="water_ul">
+							<li class="active">
+								<span>COD</span>
+							</li>
+							<li>
+								<span>PH值</span>
+							</li>
+							<li>
+								<span>氨氮</span>
+							</li>
+							<li>
+								<span>总磷</span>
+							</li>
+							<li>
+								<span>总氮</span>
+							</li>
+						</ul>
+					</div>
+					<div id="water_tab" class="tab-chart">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="update-time blue">数据更新至年月日</div>
+				</div>
+			</div>
+			<div class="monitor-box">
+				<div class="top-title">24h流量变化曲线</div>
+				<div class="tab-box">
+					<div class="little-title">今飞集团门口</div>
+					<div id="flow_chart" class="flow-chart"></div>
+					<div class="update-time blue">数据更新至年月日</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="map-box">
+				<div class="map-bg map-bg1"></div>
+				<div class="map-bg map-bg2"></div>
+				<div class="map-bg map-bg3"></div>
+				<div class="map-bg map-bg4"></div>
+				<div class="map-title">
+					<div>易涝点淹没分析</div>
+				</div>
+				<div class="map-div">
+					<iframe src="screenRightMap.html" width="100%" height="100%" frameborder="no" border="0"></iframe>
+				</div>
+				
+			</div>
+			<div class="other-box">
+				<div class="other-top">
+					<div>
+						<div class="other-title">降水量数据</div>
+						<div class="other-data-box" id="precipitation">
+							<div class="other-data">
+								<div class="other-data-name">金华站 </div>
+								<div class="other-data-time">08-14 16:00</div>
+								<div class="other-data-val"><span>3.6</span>mm</div>
+							</div>
+							<div class="other-data">
+								<div class="other-data-name">金华站 </div>
+								<div class="other-data-time">08-14 16:00</div>
+								<div class="other-data-val"><span>3.6</span>mm</div>
+							</div>
+							<div class="other-data">
+								<div class="other-data-name">金华站 </div>
+								<div class="other-data-time">08-14 16:00</div>
+								<div class="other-data-val"><span>3.6</span>mm</div>
+							</div>
+						</div>
+						<div class="update-time blue">数据更新至年月日</div>
+					</div>
+				</div>
+				<div class="other-bottom">
+					<div>
+						<div class="other-title">江河水位数据</div>
+						<div class="other-data-box" id="water_level">
+							<div class="other-data">
+								<div class="other-data-name">金华站 </div>
+								<div class="other-data-time">08-14 16:00</div>
+								<div class="other-data-val"><span>3.6</span>mm</div>
+							</div>
+							<div class="other-data">
+								<div class="other-data-name">金华站 </div>
+								<div class="other-data-time">08-14 16:00</div>
+								<div class="other-data-val"><span>3.6</span>mm</div>
+							</div>
+							<div class="other-data">
+								<div class="other-data-name">金华站 </div>
+								<div class="other-data-time">08-14 16:00</div>
+								<div class="other-data-val"><span>3.6</span>mm</div>
+							</div>
+						</div>
+						<div class="update-time blue">数据更新至年月日</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/plugins/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<script type="text/javascript" src="js/pageRight.js"></script>
+
+</body>
+</html>

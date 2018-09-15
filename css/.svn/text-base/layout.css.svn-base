@@ -1,0 +1,268 @@
+.container {
+	/*height: 100%;*/
+	/*width: 1920px;*/
+	width: 1600px;
+	height: 900px;
+	background-color: #00182e;
+	overflow: auto;
+	overflow: hidden;
+}
+
+.page-title {
+	height: 115px;
+	background: url(../images/titleBg.png) center center no-repeat;
+	/*background-size: 1907px 100%;*/
+	background-size: 1600px 100%;
+}
+
+.container .page-body {
+	height: calc(100% - 115px);
+	width: 100%;
+	padding: 10px 20px 20px 10px;
+}
+
+.content {
+	float: left;
+	position: relative;
+}
+
+.content > div {
+	position: absolute;
+}
+
+.content-left {
+	width: 440px;
+	/*height: 929px;*/
+	height: 749px;
+	background: url(../images/leftBox.png) center 31px no-repeat;
+	background-size: 100% 665px;
+}
+
+.content-center {
+	width: 700px;
+	/*height: 929px;*/
+	height: 749px;
+	background: url(../images/mapBg.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+
+.content-right {
+	width: 430px;
+	/*height: 929px;*/
+	height: 749px;
+	background: url(../images/rightBox.png) center 21px no-repeat;
+	background-size: 431px 685px;
+}
+
+.content-left > div {
+	width: calc(100% - 10px);
+	height: calc(100% - 87px);
+	left: 10px;
+	top: 32px;
+	padding: 20px 20px 0 20px;
+}
+
+.content-right > div {
+	width: 100%;
+	height: calc(100% - 87px);
+	left: 0px;
+	top: 32px;
+	padding: 20px 20px 0 20px;
+}
+
+.content-center > div {
+	/*width: 964px;*/
+	width: 696px;
+	height: 688px;
+	overflow: hidden;
+	/*left: 14px;*/
+	left: 2px;
+	top: 23px;
+	/*background-color: #ccc;*/
+	border-radius: 50px 50px 90px 90px;
+}
+
+.echarts-box {
+	height: 347px;
+	position: relative;
+}
+
+.type-detail {
+	padding-top: 35px;
+	height: 275px;
+	position: relative;
+}
+
+/*易涝点*/
+.details-bar .flood {
+	width: 0%;
+	background-image: linear-gradient(90deg, 
+		#00ffff 0%, 
+		#adffff 100%);
+}
+
+.details-name.flood, .details-num.flood {
+	color: #00ffff;
+}
+
+/*流量*/
+.details-bar .flow {
+	width: 0%;
+	background-image: linear-gradient(90deg, 
+		#0cd7fc 0%, 
+		#88edff 100%);
+}
+
+.details-name.flow, .details-num.flow {
+	color: #0cd7fc;
+}
+
+/*水质*/
+.details-bar .water {
+	width: 0%;
+	background-image: linear-gradient(90deg, 
+		#00a6ff 0%, 
+		#95daff 100%);
+}
+
+.details-name.water, .details-num.water {
+	color: #00a6ff;
+}
+
+/*液位计*/
+.details-bar .content-gage {
+	width: 0%;
+	background-image: linear-gradient(90deg, 
+		#7f50ff 0%, 
+		#cfbdff 100%);
+}
+
+.details-name.content-gage, .details-num.content-gage {
+	color: #7f50ff;
+}
+
+/*液位计*/
+.details-bar .video-monitor {
+	width: 0%;
+	background-image: linear-gradient(90deg, 
+		#576fff 0%, 
+		#bbc5ff 100%);
+}
+
+.details-name.video-monitor, .details-num.video-monitor {
+	color: #576fff;
+}
+
+.map-box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#map_box {
+	height: 100%;
+	width: 100%;
+	background: url(../images/map.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+
+.shadow-box {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 449;
+	background: -webkit-radial-gradient(rgba(0, 24, 46, 0) 0%, rgba(0, 24, 46, 0.39) 50%, #00182e 100%); /* Safari 5.1 - 6.0 */
+  background: -o-radial-gradient(rgba(0, 24, 46, 0) 0%, rgba(0, 24, 46, 0.39) 50%, #00182e 100%);  Opera 11.6 - 12.0 
+  background: -moz-radial-gradient(rgba(0, 24, 46, 0) 0%, rgba(0, 24, 46, 0.39) 50%, #00182e 100%); /* Firefox 3.6 - 15 */
+  background: radial-gradient(rgba(0, 24, 46, 0) 0%, rgba(0, 24, 46, 0.39) 50%, #00182e 100%); /* 标准的语法 */
+}
+
+.red-title {
+	color: #ff4343;
+	margin-bottom: 24px;
+}
+
+.curent-time {
+	height: 264px;
+	position: relative;
+}
+
+.red-border {
+	background-color: #992b50;
+}
+
+.curent-data-box {
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+.curent-data-box > div {
+	overflow: hidden;
+	border-bottom: 1px solid #571736;
+	padding: 10px 0;
+}
+
+.curent-data-box > div:last-child {
+	border: none;
+}
+
+.curent-data {
+	float: left;
+}
+
+.val-attr {
+	width: 98px;
+}
+
+.name-time {
+	width: calc(100% - 98px);
+}
+
+.data-top {
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 1px;
+	color: #ff4343;
+	margin-bottom: 5px;
+}
+
+.data-botom {
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #6f2222;
+}
+
+.red-echarts {
+	height: 334px;
+	padding-top: 34px;
+	position: relative;
+}
+
+.red-echarts > .red-title {
+	margin: 0;
+}
+
+.red-update {
+	color: #a63721;
+}
+
+.content-center > div.left-bg {
+	width: 11px;
+	height: 160px;
+	position: absolute;
+	left: 1px;
+  top: 525px;
+	z-index: 450;
+	background: url(../images/map-left.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+
+#monitor_legend {
+	height: 228px;
+	overflow: hidden;
+}

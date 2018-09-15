@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>center</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/leaflet/leaflet.css"/>
+</head>
+<body>
+	<div class="container">
+		<div class="page-title">
+			
+		</div>
+		<div class="page-body">
+			<div class="content content-left">
+				<div>
+					<div class="echarts-title">监测点类型统计</div>
+					<div class="echarts-box">
+						<div class="border-div"></div>
+						<div id="monitor" style="height: 100%; width: 100%;"></div>
+					</div>
+					<div class="type-detail">
+						<div id="monitor_legend">
+							<div class="details">
+								<div class="details-name flood">易涝监测点</div>
+								<div class="details-bar">
+									<div class="bar-width flood"></div>
+								</div>
+								<div class="details-num flood">
+									<span class="num"></span>
+									<span class="unit">个</span>
+								</div>
+							</div>
+							<div class="details">
+								<div class="details-name flow">流量监测点</div>
+								<div class="details-bar">
+									<div class="bar-width flow"></div>
+								</div>
+								<div class="details-num flow">
+									<span class="num"></span>
+									<span class="unit">个</span>
+								</div>
+							</div>
+							<div class="details">
+								<div class="details-name water">水质监测点</div>
+								<div class="details-bar">
+									<div class="bar-width water"></div>
+								</div>
+								<div class="details-num water">
+									<span class="num"></span>
+									<span class="unit">个</span>
+								</div>
+							</div>
+							<div class="details">
+								<div class="details-name content-gage">液位计</div>
+								<div class="details-bar">
+									<div class="bar-width content-gage"></div>
+								</div>
+								<div class="details-num content-gage">
+									<span class="num"></span>
+									<span class="unit">个</span>
+								</div>
+							</div>
+							<div class="details">
+								<div class="details-name video-monitor">视频监控点</div>
+								<div class="details-bar">
+									<div class="bar-width video-monitor"></div>
+								</div>
+								<div class="details-num video-monitor">
+									<span class="num"></span>
+									<span class="unit">个</span>
+								</div>
+							</div>
+						</div>
+						<div class="update-time"></div>
+					</div>
+				</div>
+			</div>
+			<div class="content content-center">
+				<div>
+					<div class="map-box">
+						<div id="map_box"></div>
+						<div class="shadow-box"></div>
+					</div>
+				</div>
+				<div class="left-bg"></div>
+			</div>
+			<div class="content content-right">
+				<div>
+					<div class="echarts-title red-title">报警实时数据</div>
+					<div class="curent-time">
+						<div>
+							<div class="curent-data-box">
+								<!-- <div>
+									<div class="curent-data name-time">
+										<div class="data-top">污水厂围墙外</div>
+										<div class="data-botom">08/12 15:32</div>
+									</div>
+									<div class="curent-data val-attr">
+										<div class="data-top">6.2</div>
+										<div class="data-botom">PH超标</div>
+									</div>
+								</div>
+								<div>
+									<div class="curent-data name-time">
+										<div class="data-top">污水厂围墙外</div>
+										<div class="data-botom">08/12 15:32</div>
+									</div>
+									<div class="curent-data val-attr">
+										<div class="data-top">6.2</div>
+										<div class="data-botom">PH超标</div>
+									</div>
+								</div>
+								<div>
+									<div class="curent-data name-time">
+										<div class="data-top">污水厂围墙外</div>
+										<div class="data-botom">08/12 15:32</div>
+									</div>
+									<div class="curent-data val-attr">
+										<div class="data-top">153.0mg/L</div>
+										<div class="data-botom">氨氮超标</div>
+									</div>
+								</div>
+								<div>
+									<div class="curent-data name-time">
+										<div class="data-top">洪源立交</div>
+										<div class="data-botom">08/12 15:32</div>
+									</div>
+									<div class="curent-data val-attr">
+										<div class="data-top">1.2m</div>
+										<div class="data-botom">水位超标</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+						<div class="border-div red-border"></div>
+					</div>
+					<div class="red-echarts">
+						<div class="echarts-title red-title">报警点类型统计</div>
+						<div id="alarm_type" style="width: 100%; height: 280px;"></div>
+						<div class="update-time red-update"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/plugins/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<script type="text/javascript" src="js/page.js"></script>
+	<script type="text/javascript" src="js/plugins/leaflet/leaflet.js"></script>
+	<script type="text/javascript" src="js/plugins/leaflet/esri-leaflet.js"></script>
+	<script type="text/javascript" src="js/plugins/leaflet/leaflet.ChineseTmsProviders.js"></script>
+	<script type="text/javascript" src="js/plugins/leaflet/leaflet-ant-path.js"></script>
+	<script type="text/javascript" src="js/screenCenter.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>right</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/layoutRight.css">
+		<link rel="stylesheet" type="text/css" href="js/plugins/leaflet/leaflet.css" />
+		<style type="text/css">
+			.map {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: url(../images/right/map.png) center center no-repeat;
+				background-size: 100% 100%;
+				z-index: 1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="map" id="mapContainer"></div>
+		<div class="map-data">
+			<div class="map-data-box">
+				<div class="map-data-name">降雨量</div>
+				<div class="range-box">
+					<input type="range" value="138.5" id="rainfall" min="0" max="300">
+					<span class="show-min">0</span>
+					<span class="show-max">300</span>
+				</div>
+				<input type="text" value="138.5" class="map-data-val">
+			</div>
+			<div class="map-data-box">
+				<div class="map-data-name">河盘桥监测站水位</div>
+				<div class="range-box">
+					<input type="range" value="35.84" id="water_line1" min="25" max="45">
+					<span class="show-min">25</span>
+					<span class="show-max">45</span>
+				</div>
+				<input type="text" value="35.84" class="map-data-val">
+			</div>
+			<div class="map-data-box">
+				<div class="map-data-name">金华监测站水位</div>
+				<div class="range-box">
+					<input type="range" value="36.03" id="water_line2" min="25" max="45">
+					<span class="show-min">25</span>
+					<span class="show-max">45</span>
+				</div>
+				<input type="text" value="36.03" class="map-data-val">
+			</div>
+		</div>
+		<script type="text/javascript" src="js/plugins/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/plugins/leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="js/plugins/leaflet/leaflet.ChineseTmsProviders.js"></script>
+		<script type="text/javascript" src="js/plugins/leaflet/leaflet-echarts.js"></script>
+		<script type="text/javascript" src="js/plugins/leaflet/echarts.source.js"></script>
+
+		<script type="text/javascript" src="js/RangeSlider.js"></script>
+
+		<script type="text/javascript" src="js/screenRight.js"></script>
+	</body>
+
+</html>

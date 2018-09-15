@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "name": "环城西路和金竹路口球机", 
+            "id": 1, 
+            "children": [
+                {
+                    "name": "环城西路和金竹路口球机", 
+                    "id": 12, 
+                    "vhref": "rtmp://183.131.146.125:1935/service/PuId-ChannelNo=123705000100000179-01&PlayMethod=0&StreamingType=0&name=12370500010000017901"
+                }
+            ]
+        }, 
+        {
+            "name": "环城西路和金罗东路圆盘", 
+            "id": 2, 
+            "children": [
+                {
+                    "name": "环城西路和金罗东路圆盘", 
+                    "id": 13, 
+                    "vhref": "rtmp://183.131.146.125:1935/service/PuId-ChannelNo=123705000100000180-01&PlayMethod=0&StreamingType=0&name=12370500010000018001"
+                }
+            ]
+        }, 
+        {
+            "name": "视频3", 
+            "id": 3, 
+            "children": [
+                {
+                    "name": "视频3具体视频", 
+                    "id": 14, 
+                    "vhref": "rtmp://183.131.146.125:1935/service/PuId-ChannelNo=123705000100000179-01&PlayMethod=0&StreamingType=0&name=12370500010000017901"
+                }
+            ]
+        }, 
+        {
+            "name": "视频4", 
+            "id": 4, 
+            "children": [
+                {
+                    "name": "视频4具体视频", 
+                    "id": 15, 
+                    "vhref": "rtmp://183.131.146.125:1935/service/PuId-ChannelNo=123705000100000180-01&PlayMethod=0&StreamingType=0&name=12370500010000018001"
+                }
+            ]
+        }
+    ]
+}
